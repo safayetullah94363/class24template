@@ -90,7 +90,6 @@ a{
     color: #fff;
     background: #5a51e9;
     padding: 20px 30px;
-    /* margin-top: 15px; */
     margin-right: 3px;
 }
 
@@ -184,6 +183,7 @@ img{
     padding: 80px 0;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 .div1-hiro {
     position: absolute;
@@ -342,4 +342,205 @@ img{
         transform: scale(2);
         opacity: 0;
     }
+}
+
+/* Pricing-section part css */
+.pricing-text{}
+.text-details h6{
+    transition: 2s;
+}
+.text-details h1{
+    transition: 2s;
+}
+.pricing-text h3{
+    margin-bottom: 15px;
+    position: relative;
+}
+.pricing-text h3::after {
+	content: "";
+	position: absolute;
+	top: 41px;
+	left: 241px;
+	height: 2px;
+	width: 40px;
+	background: blue;
+}
+.pricing-text p {
+	color: #777171;
+}
+
+.single-section{
+    width: 300px;
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    transition: .5s;
+}
+.text-details h6{
+    padding-bottom: 15px;
+}
+.text-details h1{
+    padding-bottom: 50px;
+    position: relative;
+}
+.text-details h1::before {
+	content: "";
+	position: absolute;
+	top: 88px;
+	left: 48px;
+	height: 1px;
+	width: 131px;
+	background: #ddd;
+}
+.text-details ul{
+    list-style: none;
+    padding-left: 0;
+    color:#777171;
+}
+.text-details ul li {
+	line-height: 35px;
+}
+
+.single-section a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px 17px;
+    border-radius: 25px;
+    background-color: #1d6df7;
+    position: relative;
+    z-index: 1;
+    border: 1px solid transparent;
+}
+.single-section a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: #1d6df7;
+    transition: .5s;
+    border-radius: 25px;
+    z-index: -1;
+   
+}
+.single-section a:hover::after{
+    width: 100%;
+}
+.single-section:hover{
+    background: #1d6df7;
+    color: #fff;
+}
+.single-section:hover ul{
+    color: #fff;
+}
+.single-section:hover a{
+    color: #1d6df7;
+    background: #fff;
+    transition: .5s;
+}
+.single-section:hover a:hover{
+    color: #fff;
+    background: #1d6df7;
+    border: 1px solid #fff;
+}
+/* Banner-section part css */
+.slider{
+    background: url("https://i.ibb.co/6XCLJkC/free-bg.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 200px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.slider::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #124fb8c4;
+    z-index: -1;
+}
+.slider-content{
+    width: 50%;
+    margin: auto;
+}
+.slider-content a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #1d6df7;
+    padding: 10px 17px;
+    border-radius: 25px;
+    background-color: #fff;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+    overflow: hidden;
+}
+.slider-content a:hover {
+    color: #fff;
+}
+.slider-content a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #1d6df7;
+    transition: .5s;
+    border-radius: 25px;
+    z-index: -1;
+   
+}
+.slider-content a:hover::before{
+    width: 100%;
+}
+
+/* Newsletter-section part css */
+.newsletter-left{
+    background:#3e62e5;
+    
+}
+.newsletter-left p{
+    width: 50%;
+}
+.newsletter-button input:first-child{
+    border-radius: 25px;
+    margin-right: 25px;
+    padding: 0 20px;
+}
+.newsletter-button a{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    padding: 2px 17px;
+    border-radius: 25px;
+    background-color: #3960e5;
+    border: 1px solid #fff;
+}
+.newsletter-right{
+    padding: 30px;
+}
+.newsletter-right h3 {
+	width: 70%;
+	display: inline-block;
+	padding-bottom: 57px;
+}
+.newsletter-right a {
+	display: inline-block;
+	border: 1px solid #1d6df7;
+	border-radius: 25px;
+	padding: 5px 20px;
+	background: #1d6df7;
+}
+.newsletter-right a{
+    color: #fff;
 }
